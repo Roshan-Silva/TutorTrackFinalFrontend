@@ -1,0 +1,120 @@
+.header{
+    width: 90%;
+    margin: 80px auto -10px;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.header-left h1{
+    font-size: 100px;
+    color: #0e0e72;
+}
+.header-left span{
+    color: #534ee2;
+}
+.header-left p{
+    font-size: 25px;
+    color: #282d94;
+    font-weight: 500;
+}
+.visit-us-button{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #9290C3;
+    font-size: 20px;
+    padding: 8px 16px;
+    margin-top: 25px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.visit-us-button:hover{
+    background: transparent;
+    transition: 0.5s;
+    gap: 20px;
+}
+.visit-us-button img{
+    width: 25px;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.header-right img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+@media(max-width:1025px){
+    .header-left h1{
+        font-size: 80px;
+    }
+    .header-left p{
+        font-size: 20px;
+    }
+    .header{
+        margin: 20px auto -40px;
+        height: 60vh;
+    }
+}
+@media(max-width:769px){
+    .header{
+        flex-direction: column;
+        height: 95vh;
+    }
+    .header-left{
+        margin: 80px auto -20px;
+    
+        width: 80%;
+    }
+    .header-left h1{
+        font-size: 100px;
+    }
+    .header-left p{
+        font-size: 30px;
+    }
+    .header-right{
+        width: 80%;
+        
+    }
+    
+}
+@media(max-width:426px){
+    .header{
+        height: 60vh;
+    }
+    .header-left{
+        margin: 100px auto 50px;
+       width: 90%;
+        
+    }
+    .header-left h1{
+        font-size: 60px;
+    }
+    .header-left p{
+        font-size: 18px;
+        width: 100%;
+    }
+    .header-right{
+        width: 90%;
+      
+    }
+    .visit-us-button{
+        padding: 10px 12px;
+        font-size: 16px;
+    }
+    .visit-us-button img{
+        width: 18px;
+    }
+    
+}

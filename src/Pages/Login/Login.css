@@ -1,0 +1,91 @@
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+}
+.login-form-container{
+    width: 375px;
+    background: #EEF7FF;
+    padding: 30px;
+    border-radius: 8px;
+}
+.login-form-container h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.form-container{
+    margin-top: 20px;
+}
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+.input-fields label{
+    font-size: 16px;
+    font-weight: 500;
+}
+.input-fields input{
+    padding: 8px;
+    outline: none;
+    border: 1px solid #9290C3;
+    border-radius: 4px;
+}
+.log-button button{
+    width: 100%;
+    border: none;
+    padding: 8px;
+    color: white;
+    background: #1B1A55;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.log-button button:hover{
+    background: #070F2B;
+}
+hr{
+    height: 1px;
+    background-color: #9290C3;
+    border: none;
+}
+.no-account{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    text-align: center;
+    gap: 8px;
+    justify-content: center;
+}
+.no-account p{
+    font-size: 14px;
+    color: #6177c9;
+}
+.accounts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    
+}
+.accounts span:hover{
+    color: #535C91;
+}
+.account-links{
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #070F2B;
+    font-weight: 600;
+}
+@media(max-width:380px){
+    .login-form-container{
+        width: 350px;
+    }
+}

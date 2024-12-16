@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 4px;
+    z-index: 10; /* Ensure the navbar is on top */
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-logo img {
+    width: 150px;
+    cursor: pointer;
+    margin-left: 50px;
+  }
+  
+  .nav-logo img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  
+  .nav-items ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .nav-link-items {
+    color: #070F2B;
+  }
+  
+  .nav-items ul li {
+    font-size: 16px;
+  }
+  
+  .nav-link-items:hover {
+    color: #1B1A55;
+    transform: scale(1.1);
+    transition: 0.5s;
+    text-shadow: 1px 1px 2px #535C91;
+  }
+  
+  .signup-login {
+    display: flex;
+    align-items: center;
+    border: none;   
+    background: #EEEDEB;
+    border-radius: 12px;
+    margin-right: 20px;
+  }
+  
+  .signup-login .login,
+  .signup-login .signup {
+    display: flex;
+  }
+  
+  .login button,
+  .signup button {
+    width: 80px;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  
+  .login button {
+    background: #EEEDEB;
+    color: #070F2B;
+    font-weight: 500;
+  }
+  
+  .login button:hover {
+    background: #070F2B;
+    color: #fff;
+  }
+  
+  .signup button {
+    background: #070F2B;
+    color: #fff;
+  }
+  
+  .signup button.hovered {
+    background: #EEEDEB;
+    color: #070F2B;
+  }
+  
+  .signup button:hover {
+    background: #111d42;
+  }
+  
+  .user-account img {
+    width: 30px;
+    margin-right: 50px;
+    cursor: pointer;
+  }
+  
+  .user-account img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  
+  .toggle-menu {
+    display: none;
+  }
+  
+  .toggle-menu img {
+    width: 40px;
+  }
+  
+  @media (max-width: 769px) {
+    .nav-logo img {
+      margin-left: 30px;
+      width: 130px;
+    }
+  
+    .nav-items ul {
+      gap: 10px;
+    }
+  
+    .login button,
+    .signup button {
+      font-size: 14px;
+      width: 75px;
+      padding: 8px;
+    }
+  
+    .user-account img {
+      margin-right: 30px;
+    }
+  }
+  
+  @media (max-width: 426px) {
+    .nav-items {
+      display: none;
+      position: fixed;
+      top: 60px;
+      right: 0;
+      padding: 30px;
+      background: #fff;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in-out;
+      z-index: 9; /* Ensure the nav-items is below the navbar */
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }  
+    .nav-items.open {
+      display: flex;
+      transform: translateX(0);
+    }
+  
+    .nav-items ul {
+      flex-direction: column;
+      align-items: start;
+    }
+  
+    .nav-items.open ul li {
+      font-size: 20px;
+      font-weight: 500;
+      gap: 10px;
+      width: 100%;
+    }
+  
+    .nav-items.open ul li:hover {
+      border-left: 4px solid #070F2B;
+      padding-left: 10px;
+      transition: 0.5s;
+    }
+  
+    .signup-login {
+      display: flex;
+      gap: 10px;
+      margin-top: 40px;
+    }
+  
+    .toggle-menu {
+      display: flex;
+      align-items: center;
+      margin-right: 60px;
+    }
+  
+    .toggle-menu img:hover {
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+  }
+  

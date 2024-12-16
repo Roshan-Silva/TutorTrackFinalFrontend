@@ -1,0 +1,106 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 120px auto 100px;
+    background: #EEF7FF;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-heading h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.about-heading p {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #d0cccc;
+    margin-top: 10px;
+}
+
+.about-mission,
+.about-values,
+.about-team {
+    margin-bottom: 40px;
+}
+
+.about-mission h2,
+.about-values h2,
+.about-team h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about-mission p,
+.about-values ul {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about-values ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-values li {
+    margin-bottom: 10px;
+}
+
+.about-team .team-members {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    margin: 5px 0;
+    color: #333;
+}
+@media(max-width:426px){
+    .about-heading h1{
+        font-size: 35px;
+    }
+    .about-heading p{
+        font-size: 10px;
+    }
+    
+.about-mission h2,
+.about-values h2,
+.about-team h2{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.about-mission p,
+.about-values ul{
+    font-size: 14px;
+}
+
+}

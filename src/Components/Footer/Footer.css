@@ -1,0 +1,153 @@
+/* File path: src/components/Footer.css */
+
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .footer-container-left, 
+  .footer-container-middle, 
+  .footer-container-right {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-container-left h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .footer-container-left p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  .footer-container-middle h2,
+  .footer-container-right h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .footer-link-items {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-link-item {
+    margin: 10px 0;
+  }
+  
+  .footer-link-item li {
+    color: #ecf0f1;
+    font-size: 1.1em;
+  }
+  
+  .footer-link-item:hover li {
+    color: #3498db;
+  }
+  
+  .get-in-touch-images {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .get-in-touch-images img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+  }
+  
+  .get-in-touch-images img:hover {
+    transform: scale(1.1);
+  }
+  
+  .news-letter {
+    margin-top: 20px;
+  }
+  
+  .news-letter h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .news-letter-input {
+    display: flex;
+  }
+  
+  .news-letter-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 1em;
+  }
+  
+  .news-letter-input button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .news-letter-input button:hover {
+    background-color: #2980b9;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #7f8c8d;
+    margin: 20px 0;
+  }
+  
+   .footer-copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+   
+   .copyright,
+  .privacy-policy {
+    font-size: 0.9em;
+  } 
+  
+   .privacy-policy p {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .privacy-policy p:hover {
+    color: #3498db;
+  } 
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-copyright {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .privacy-policy {
+      margin-top: 10px;
+    }
+  }
+  

@@ -1,0 +1,135 @@
+/* Profile Container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5; /* Subtle background color */
+    background-image: url('../../Assets/Images/background.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents image from repeating */
+    background-color: rgba(255, 255, 255, 0.5); /* Background color with transparency */
+    background-blend-mode: overlay; /* or try multiply, screen, etc. */
+}
+
+.profile {
+    width: 90%;
+    max-width: 700px;
+    margin: 5vh 0; /* Margin top and bottom */
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1), 0 8px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* Profile Header */
+.profile-header {
+    position: relative;
+}
+
+/* Cover Image */
+.cover-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    bottom: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid white;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Info */
+.profile-info {
+    margin-top: 100px;
+}
+
+.profile-info h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #333;
+}
+
+.profile-info p {
+    color: #666;
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin: 0 20px;
+    text-align: justify; /* Ensures even text alignment */
+}
+
+/* Buttons */
+.button-edit {
+    margin-top: 20px;
+}
+
+.button-edit button {
+    background: linear-gradient(145deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.button-edit button:hover {
+    background: linear-gradient(145deg, #2a5298, #1e3c72);
+    transform: scale(1.05);
+}
+
+/* Profile Updates */
+.pupdate {
+    max-height: 80vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Added margin for spacing */
+}
+
+/* Cancel Button */
+.cancelButton {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px; /* Added margin for spacing */
+}
+
+.cancelButton button {
+    background: linear-gradient(145deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cancelButton button:hover {
+    background: linear-gradient(145deg, #2a5298, #1e3c72);
+    transform: scale(1.05);
+}
