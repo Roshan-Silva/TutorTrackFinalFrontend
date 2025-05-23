@@ -85,9 +85,7 @@ const SearchContainer = ({ searchQuery, setSearchQuery }) => {
           searchResults.map((profile, index) => (
             <ProfileCard key={index} profile={profile} />
           ))
-        ) : (
-          ''
-        )}
+        ) : ('')}
       </div>
     </div>
   );
